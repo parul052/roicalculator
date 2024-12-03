@@ -65,6 +65,11 @@ ui <- shinyUI(fluidPage(
         img(src = "new_logo.png", class = "logo")
       )),
   
+  # Added a language selector
+  selectInput("language_select", "Select Language", 
+              choices = c("English" = "en", 
+                          "Hindi" = "hi", 
+                          "Spanish" = "es")),
   
   h2("Universal Values"),
   fluidRow(column(width=2,
